@@ -15,14 +15,15 @@ namespace PROYECTOFINALESCOLAR
 	/// <summary>
 	/// Description of Form1.
 	/// </summary>
-	public partial class Form1 : Form
+	public partial class FrmMenuPrincipal : Form
 	{
-		public Form1()
+		public FrmMenuPrincipal()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
+			this.IsMdiContainer = true;
 			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
