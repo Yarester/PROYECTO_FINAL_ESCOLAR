@@ -20,6 +20,7 @@ namespace PROYECTOFINALESCOLAR
 	{
 		public MainForm()
 		{
+			Application.Run(new Form2());
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
@@ -29,5 +30,27 @@ namespace PROYECTOFINALESCOLAR
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		
+		private void btnRegistrar_Click(object sender, EventArgs e)
+		{
+		string usuario = txtUsuario.Text;
+		string contraseña = txtContra.Text;
+		
+		string Usau = "admin";
+		string Ucon = "123";
+		
+		if(usuario == Usau && contraseña == Ucon)
+		{
+			Menu ventanaMenu = new Menu();
+			ventanaMenu.Show();
+			this.Hide();
+		}
+		else
+		{
+			MessageBox.Show("Datos incorrectos. Intenta de nuevo.");
+		}
+		
 	}
+}
 }
