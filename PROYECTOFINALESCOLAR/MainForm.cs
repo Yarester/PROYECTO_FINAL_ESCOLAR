@@ -29,5 +29,34 @@ namespace PROYECTOFINALESCOLAR
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void BtnEntrarClick(object sender, EventArgs e)
+		{
+			    string usuario = txtUser.Text;
+			    string contra = txtContra.Text;
+			
+			    string usuarioCorrecto = "Admina";
+			    string contraCorrecta = "1234";
+			
+			    if (usuario == usuarioCorrecto && contra == contraCorrecta)
+			    {
+			        MessageBox.Show("Bienvenido");
+			
+			        FrmMenuPrincipal menu = new FrmMenuPrincipal();
+			        menu.Show();
+			
+			        this.Hide();
+			    }
+			    else
+			    {
+			        MessageBox.Show("Usuario o contraseña incorrectos");
+			    }
+
+		}
+		
+		void TxtContraTextChanged(object sender, EventArgs e)
+		{
+			txtContra.PasswordChar = '*';				
+		}
 	}
 }
