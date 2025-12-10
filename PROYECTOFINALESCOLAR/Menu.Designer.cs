@@ -53,11 +53,6 @@ namespace PROYECTOFINALESCOLAR
 			this.pirámideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.conversionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.kilométrosAMillasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.boletaDeCalificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.pasteleríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.kilometrosAMillasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.masaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.kilogramosAMillasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,7 +60,13 @@ namespace PROYECTOFINALESCOLAR
 			this.celsiusAFarenheitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.tiempoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.segundosAHorasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.boletaDeCalificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pasteleríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.label1 = new System.Windows.Forms.Label();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -100,13 +101,13 @@ namespace PROYECTOFINALESCOLAR
 			// factorialToolStripMenuItem
 			// 
 			this.factorialToolStripMenuItem.Name = "factorialToolStripMenuItem";
-			this.factorialToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+			this.factorialToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
 			this.factorialToolStripMenuItem.Text = "Factorial";
 			// 
 			// fibbonacciToolStripMenuItem
 			// 
 			this.fibbonacciToolStripMenuItem.Name = "fibbonacciToolStripMenuItem";
-			this.fibbonacciToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+			this.fibbonacciToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
 			this.fibbonacciToolStripMenuItem.Text = "Fibonnaci";
 			// 
 			// áreasToolStripMenuItem
@@ -205,38 +206,6 @@ namespace PROYECTOFINALESCOLAR
 			this.kilométrosAMillasToolStripMenuItem.Size = new System.Drawing.Size(162, 24);
 			this.kilométrosAMillasToolStripMenuItem.Text = "Longitud";
 			// 
-			// boletaDeCalificacionesToolStripMenuItem
-			// 
-			this.boletaDeCalificacionesToolStripMenuItem.Name = "boletaDeCalificacionesToolStripMenuItem";
-			this.boletaDeCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
-			this.boletaDeCalificacionesToolStripMenuItem.Text = "Boleta de calificaciones";
-			// 
-			// pasteleríaToolStripMenuItem
-			// 
-			this.pasteleríaToolStripMenuItem.Name = "pasteleríaToolStripMenuItem";
-			this.pasteleríaToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
-			this.pasteleríaToolStripMenuItem.Text = "Pastelería";
-			// 
-			// empleadosToolStripMenuItem
-			// 
-			this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-			this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
-			this.empleadosToolStripMenuItem.Text = "Empleados";
-			// 
-			// salirToolStripMenuItem
-			// 
-			this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-									this.salirToolStripMenuItem1});
-			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-			this.salirToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
-			this.salirToolStripMenuItem.Text = "Archivo";
-			// 
-			// acercaDeToolStripMenuItem
-			// 
-			this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-			this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
-			this.acercaDeToolStripMenuItem.Text = "Acerca de";
-			// 
 			// kilometrosAMillasToolStripMenuItem
 			// 
 			this.kilometrosAMillasToolStripMenuItem.Name = "kilometrosAMillasToolStripMenuItem";
@@ -285,18 +254,62 @@ namespace PROYECTOFINALESCOLAR
 			this.segundosAHorasToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
 			this.segundosAHorasToolStripMenuItem.Text = "Segundos a Horas";
 			// 
+			// boletaDeCalificacionesToolStripMenuItem
+			// 
+			this.boletaDeCalificacionesToolStripMenuItem.Name = "boletaDeCalificacionesToolStripMenuItem";
+			this.boletaDeCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
+			this.boletaDeCalificacionesToolStripMenuItem.Text = "Boleta de calificaciones";
+			// 
+			// pasteleríaToolStripMenuItem
+			// 
+			this.pasteleríaToolStripMenuItem.Name = "pasteleríaToolStripMenuItem";
+			this.pasteleríaToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+			this.pasteleríaToolStripMenuItem.Text = "Pastelería";
+			// 
+			// empleadosToolStripMenuItem
+			// 
+			this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+			this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+			this.empleadosToolStripMenuItem.Text = "Empleados";
+			// 
+			// salirToolStripMenuItem
+			// 
+			this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.salirToolStripMenuItem1});
+			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+			this.salirToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+			this.salirToolStripMenuItem.Text = "Archivo";
+			// 
 			// salirToolStripMenuItem1
 			// 
 			this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-			this.salirToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+			this.salirToolStripMenuItem1.Size = new System.Drawing.Size(107, 24);
 			this.salirToolStripMenuItem1.Text = "Salir";
+			// 
+			// acercaDeToolStripMenuItem
+			// 
+			this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+			this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+			this.acercaDeToolStripMenuItem.Text = "Acerca de";
+			// 
+			// label1
+			// 
+			this.label1.BackColor = System.Drawing.Color.Purple;
+			this.label1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(83, 190);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(752, 175);
+			this.label1.TabIndex = 2;
+			this.label1.Text = "Menú Principal";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// FrmMenuPrincipal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
 			this.ClientSize = new System.Drawing.Size(939, 471);
+			this.Controls.Add(this.label1);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "FrmMenuPrincipal";
@@ -306,6 +319,7 @@ namespace PROYECTOFINALESCOLAR
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem segundosAHorasToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem tiempoToolStripMenuItem;
