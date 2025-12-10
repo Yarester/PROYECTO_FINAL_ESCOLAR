@@ -30,5 +30,34 @@ namespace PROYECTOFINALESCOLAR
 			
 			//PASTELERIA
 		}
+		
+		void RadioButton1CheckedChanged(object sender, EventArgs e)
+		{
+			if(rdbDulce.Checked)
+			{
+			 rdbDulce.ForeColor=Color.MediumBlue;
+			}
+			else 
+			{
+			 rdbDulce.ForeColor=Color.White;
+			}
+		}
+		
+		void RdbSaladoCheckedChanged(object sender, EventArgs e)
+		{
+			if(rdbSalado.Checked)
+			{
+			 rdbSalado.ForeColor=Color.MediumBlue;
+			}
+			else 
+			{
+			 rdbSalado.ForeColor=Color.White;
+			}
+		}
+		
+		void Form2Load(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }
