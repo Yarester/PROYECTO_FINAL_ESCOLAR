@@ -30,5 +30,15 @@ namespace PROYECTOFINALESCOLAR
 			
 			//PASTELERIA
 		}
+		
+		
+		void BtnCalcularClick(object sender, EventArgs e)
+		{
+			double lado = double.Parse(txtLado.Text);
+			
+			double area = lado * lado;
+			
+			lblResultado.Text = "Área = " + area;
+		}
 	}
 }

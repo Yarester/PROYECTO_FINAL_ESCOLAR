@@ -42,9 +42,7 @@ namespace PROYECTOFINALESCOLAR
 		
 		if(usuario == Usau && contraseña == Ucon)
 		{
-			Menu ventanaMenu = new Menu();
-			ventanaMenu.Show();
-			this.Hide();
+			
 		}
 		else
 		{
