@@ -20,7 +20,7 @@ namespace PROYECTOFINALESCOLAR
 	{
 		public MainForm()
 		{
-			Application.Run(new Form2());
+			Application.Run(new frmPasteleria());
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
@@ -42,8 +42,9 @@ namespace PROYECTOFINALESCOLAR
 		
 		if(usuario == Usau && contraseña == Ucon)
 		{
-			Menu ventanaMenu = new Menu();
-			ventanaMenu.Show();
+		
+		//	Menu ventanaMenu = new Menu();
+		//	ventanaMenu.Show();
 			this.Hide();
 		}
 		else
