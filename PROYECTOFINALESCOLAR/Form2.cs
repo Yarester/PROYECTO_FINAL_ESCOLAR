@@ -15,9 +15,9 @@ namespace PROYECTOFINALESCOLAR
 	/// <summary>
 	/// Description of Form2.
 	/// </summary>
-	public partial class Form2 : Form
+	public partial class frmPasteleria : Form
 	{
-		public Form2()
+		public frmPasteleria()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -29,6 +29,30 @@ namespace PROYECTOFINALESCOLAR
 			//
 			
 			//PASTELERIA
+		}
+		
+		void RdbDulceCheckedChanged(object sender, EventArgs e)
+		{
+			if(rdbDulce.Checked)
+			{
+			 rdbDulce.ForeColor=Color.MediumBlue;
+			}
+			else 
+			{
+			 rdbDulce.ForeColor=Color.White;
+			}
+		}
+		
+		void RdbSaladoCheckedChanged(object sender, EventArgs e)
+		{
+			if(rdbSalado.Checked)
+			{
+			 rdbSalado.ForeColor=Color.MediumBlue;
+			}
+			else 
+			{
+			 rdbSalado.ForeColor=Color.White;
+			}
 		}
 	}
 }
