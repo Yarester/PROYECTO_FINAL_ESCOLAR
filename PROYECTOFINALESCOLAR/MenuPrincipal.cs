@@ -15,9 +15,9 @@ namespace PROYECTOFINALESCOLAR
 	/// <summary>
 	/// Description of Form1.
 	/// </summary>
-	public partial class FrmMenuPrincipal : Form
+	public partial class MenuPrincipal : Form
 	{
-		public FrmMenuPrincipal()
+		public MenuPrincipal()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -30,6 +30,23 @@ namespace PROYECTOFINALESCOLAR
 			//
 			
 			//MDI FORMULARIO
+		}
+		
+		
+		void FactorialToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			    Factorial fac = new Factorial();
+   			 	fac.MdiParent = this;
+  				fac.Show();
+
+		}
+		
+		void FibbonacciToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			    Fibonacci fib = new Fibonacci();
+    			fib.MdiParent = this;
+    			fib.Show();
+
 		}
 	}
 }

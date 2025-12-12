@@ -32,26 +32,40 @@ namespace PROYECTOFINALESCOLAR
 		}
 		
 		
-		private void btnRegistrar_Click(object sender, EventArgs e)
+		
+		void BtnEntrarClick(object sender, EventArgs e)
 		{
-		string usuario = txtUsuario.Text;
-		string contraseña = txtContra.Text;
+			string usuario = txtUsuario.Text;
+		    string contra = txtPass.Text;
 		
-		string Usau = "admin";
-		string Ucon = "123";
+		    string usuarioCorrecto = "admina";
+		    string contraCorrecta = "1234";
+				    
+				    if (usuario == usuarioCorrecto && contra == contraCorrecta)
+		    {
+		        MessageBox.Show("Bienvenido");
 		
-		if(usuario == Usau && contraseña == Ucon)
-		{
+		        MenuPrincipal menu = new MenuPrincipal();
+		        menu.Show();
 		
-		//	Menu ventanaMenu = new Menu();
-		//	ventanaMenu.Show();
-			this.Hide();
+		        this.Hide();
+		    }
+		    else
+		    {
+		        MessageBox.Show("Usuario o contraseña incorrectos");
+		    }
+
+
 		}
-		else
+		
+		void TxtPassTextChanged(object sender, EventArgs e)
 		{
-			MessageBox.Show("Datos incorrectos. Intenta de nuevo.");
+			txtPass.PasswordChar = '*';
 		}
 		
-	}
+		void btnSalirClick(object sender, EventArgs e)
+		{
+			Close();
+		}
 }
 }
