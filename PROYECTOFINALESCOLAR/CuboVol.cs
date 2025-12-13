@@ -1,8 +1,8 @@
 ﻿/*
  * Creado por SharpDevelop.
  * Usuario: EDGAR
- * Fecha: 12/12/2025
- * Hora: 05:56 p. m.
+ * Fecha: 13/12/2025
+ * Hora: 04:48 p. m.
  * 
  * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
  */
@@ -13,11 +13,11 @@ using System.Windows.Forms;
 namespace PROYECTOFINALESCOLAR
 {
 	/// <summary>
-	/// Description of PiramideVol.
+	/// Description of CuboVol.
 	/// </summary>
-	public partial class PiramideVol : Form
+	public partial class CuboVol : Form
 	{
-		public PiramideVol()
+		public CuboVol()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -29,29 +29,16 @@ namespace PROYECTOFINALESCOLAR
 			//
 		}
 		
-		
-		void BtnCloseClick(object sender, EventArgs e)
-		{
-			Close();
-		}
-		
-		void Button3Click(object sender, EventArgs e)
-		{
-			txtH.Clear();
-			txtLado.Clear();
-			txtVol.Clear();
-		}
-		
 		void BtnCalcularClick(object sender, EventArgs e)
 		{
-					double lado, altura, volumen;
+					double lado, volumen;
 		
 		    lado = Convert.ToDouble(txtLado.Text);
-		    altura = Convert.ToDouble(txtH.Text);
 		
-		    volumen = (lado * lado * altura) / 3;
+		    volumen = Math.Pow(lado, 3);
 		
-		    txtVol.Text = volumen.ToString("0.00");
+		    txtResultado.Text = volumen.ToString("0.00");
+
 		}
 	}
 }

@@ -182,6 +182,7 @@ namespace PROYECTOFINALESCOLAR
 			this.cuboToolStripMenuItem.Name = "cuboToolStripMenuItem";
 			this.cuboToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
 			this.cuboToolStripMenuItem.Text = "Cubo";
+			this.cuboToolStripMenuItem.Click += new System.EventHandler(this.CuboToolStripMenuItemClick);
 			// 
 			// pirámideToolStripMenuItem
 			// 
