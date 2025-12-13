@@ -41,6 +41,8 @@ namespace PROYECTOFINALESCOLAR
 			this.btnCalcular = new System.Windows.Forms.Button();
 			this.txtNum = new System.Windows.Forms.TextBox();
 			this.txtResultado = new System.Windows.Forms.TextBox();
+			this.btnSalir = new System.Windows.Forms.Button();
+			this.btnClear = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -79,39 +81,70 @@ namespace PROYECTOFINALESCOLAR
 			// 
 			this.txtNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
 			this.txtNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtNum.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtNum.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 16.2F, System.Drawing.FontStyle.Bold);
 			this.txtNum.Location = new System.Drawing.Point(87, 150);
 			this.txtNum.Name = "txtNum";
-			this.txtNum.Size = new System.Drawing.Size(219, 32);
+			this.txtNum.Size = new System.Drawing.Size(219, 36);
 			this.txtNum.TabIndex = 2;
 			// 
 			// txtResultado
 			// 
 			this.txtResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
 			this.txtResultado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtResultado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtResultado.Location = new System.Drawing.Point(87, 292);
+			this.txtResultado.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 16.2F, System.Drawing.FontStyle.Bold);
+			this.txtResultado.Location = new System.Drawing.Point(87, 282);
 			this.txtResultado.Name = "txtResultado";
-			this.txtResultado.Size = new System.Drawing.Size(219, 32);
+			this.txtResultado.Size = new System.Drawing.Size(219, 36);
 			this.txtResultado.TabIndex = 3;
+			// 
+			// btnSalir
+			// 
+			this.btnSalir.BackColor = System.Drawing.Color.Fuchsia;
+			this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.btnSalir.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSalir.Location = new System.Drawing.Point(12, 333);
+			this.btnSalir.Name = "btnSalir";
+			this.btnSalir.Size = new System.Drawing.Size(152, 41);
+			this.btnSalir.TabIndex = 4;
+			this.btnSalir.Text = "Cerrar";
+			this.btnSalir.UseVisualStyleBackColor = false;
+			this.btnSalir.Click += new System.EventHandler(this.BtnSalirClick);
+			// 
+			// btnClear
+			// 
+			this.btnClear.BackColor = System.Drawing.Color.Fuchsia;
+			this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.btnClear.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnClear.Location = new System.Drawing.Point(207, 333);
+			this.btnClear.Name = "btnClear";
+			this.btnClear.Size = new System.Drawing.Size(152, 41);
+			this.btnClear.TabIndex = 5;
+			this.btnClear.Text = "Limpiar";
+			this.btnClear.UseVisualStyleBackColor = false;
+			this.btnClear.Click += new System.EventHandler(this.BtnClearClick);
 			// 
 			// Factorial
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-			this.ClientSize = new System.Drawing.Size(406, 351);
+			this.ClientSize = new System.Drawing.Size(406, 386);
+			this.Controls.Add(this.btnClear);
+			this.Controls.Add(this.btnSalir);
 			this.Controls.Add(this.txtResultado);
 			this.Controls.Add(this.txtNum);
 			this.Controls.Add(this.btnCalcular);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Factorial";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Factorial";
 			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnClear;
+		private System.Windows.Forms.Button btnSalir;
 		private System.Windows.Forms.TextBox txtResultado;
 		private System.Windows.Forms.TextBox txtNum;
 		private System.Windows.Forms.Button btnCalcular;

@@ -47,6 +47,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EsferaVol.cs" />
+    <Compile Include="EsferaVol.Designer.cs">
+      <DependentUpon>EsferaVol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Factorial.cs" />
     <Compile Include="Factorial.Designer.cs">
       <DependentUpon>Factorial.cs</DependentUpon>
@@ -75,10 +79,17 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PiramideVol.cs" />
+    <Compile Include="PiramideVol.Designer.cs">
+      <DependentUpon>PiramideVol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <CodeAnalysisDictionary Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="EsferaVol.resx">
+      <DependentUpon>EsferaVol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Factorial.resx">
       <DependentUpon>Factorial.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PiramideVol.resx">
+      <DependentUpon>PiramideVol.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

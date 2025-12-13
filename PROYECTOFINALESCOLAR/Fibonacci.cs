@@ -61,5 +61,18 @@ namespace PROYECTOFINALESCOLAR
 		    }
 
 		}
+		
+		
+		
+		void BtnSalirClick(object sender, EventArgs e)
+		{
+			Close();
+		}
+		
+		void BtnCleanClick(object sender, EventArgs e)
+		{
+			txtResult.Clear();
+		   txtNum.Clear();
+		}
 	}
 }

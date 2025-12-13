@@ -48,5 +48,20 @@ namespace PROYECTOFINALESCOLAR
     			fib.Show();
 
 		}
+		
+		void EsferaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			EsferaVol Esfera = new EsferaVol();
+			Esfera.MdiParent = this;
+			Esfera.Show();
+		}
+		
+		
+		void PirámideToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			PiramideVol Piramide = new PiramideVol();
+			Piramide.MdiParent = this;
+			Piramide.Show();
+		}
 	}
 }
