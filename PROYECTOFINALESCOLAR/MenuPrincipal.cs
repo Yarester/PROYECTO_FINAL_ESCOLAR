@@ -63,5 +63,12 @@ namespace PROYECTOFINALESCOLAR
 			Piramide.MdiParent = this;
 			Piramide.Show();
 		}
+		
+		void CuboToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			CuboVol Cubo = new CuboVol();
+			Cubo.MdiParent = this;
+			Cubo.Show();
+		}
 	}
 }

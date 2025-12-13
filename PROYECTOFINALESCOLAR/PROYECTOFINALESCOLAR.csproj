@@ -47,6 +47,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CuboVol.cs" />
+    <Compile Include="CuboVol.Designer.cs">
+      <DependentUpon>CuboVol.cs</DependentUpon>
+    </Compile>
     <Compile Include="EsferaVol.cs" />
     <Compile Include="EsferaVol.Designer.cs">
       <DependentUpon>EsferaVol.cs</DependentUpon>
@@ -87,6 +91,9 @@
     <CodeAnalysisDictionary Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CuboVol.resx">
+      <DependentUpon>CuboVol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EsferaVol.resx">
       <DependentUpon>EsferaVol.cs</DependentUpon>
     </EmbeddedResource>
