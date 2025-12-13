@@ -55,5 +55,16 @@ namespace PROYECTOFINALESCOLAR
 		        txtResultado.Text = "Ingresa un número válido.";
 		    }
 				}
+		
+		void BtnSalirClick(object sender, EventArgs e)
+		{
+			Close();
+		}
+		
+		void BtnClearClick(object sender, EventArgs e)
+		{
+			txtNum.Clear();
+			txtResultado.Clear();
+		}
 	}
 }

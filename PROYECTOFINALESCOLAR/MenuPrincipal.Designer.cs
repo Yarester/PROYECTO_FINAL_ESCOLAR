@@ -100,14 +100,14 @@ namespace PROYECTOFINALESCOLAR
 			// factorialToolStripMenuItem
 			// 
 			this.factorialToolStripMenuItem.Name = "factorialToolStripMenuItem";
-			this.factorialToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+			this.factorialToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
 			this.factorialToolStripMenuItem.Text = "Factorial";
 			this.factorialToolStripMenuItem.Click += new System.EventHandler(this.FactorialToolStripMenuItemClick);
 			// 
 			// fibbonacciToolStripMenuItem
 			// 
 			this.fibbonacciToolStripMenuItem.Name = "fibbonacciToolStripMenuItem";
-			this.fibbonacciToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+			this.fibbonacciToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
 			this.fibbonacciToolStripMenuItem.Text = "Fibonnaci";
 			this.fibbonacciToolStripMenuItem.Click += new System.EventHandler(this.FibbonacciToolStripMenuItemClick);
 			// 
@@ -173,20 +173,22 @@ namespace PROYECTOFINALESCOLAR
 			// esferaToolStripMenuItem
 			// 
 			this.esferaToolStripMenuItem.Name = "esferaToolStripMenuItem";
-			this.esferaToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
+			this.esferaToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
 			this.esferaToolStripMenuItem.Text = "Esfera";
+			this.esferaToolStripMenuItem.Click += new System.EventHandler(this.EsferaToolStripMenuItemClick);
 			// 
 			// cuboToolStripMenuItem
 			// 
 			this.cuboToolStripMenuItem.Name = "cuboToolStripMenuItem";
-			this.cuboToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
+			this.cuboToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
 			this.cuboToolStripMenuItem.Text = "Cubo";
 			// 
 			// pirámideToolStripMenuItem
 			// 
 			this.pirámideToolStripMenuItem.Name = "pirámideToolStripMenuItem";
-			this.pirámideToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
+			this.pirámideToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
 			this.pirámideToolStripMenuItem.Text = "Pirámide";
+			this.pirámideToolStripMenuItem.Click += new System.EventHandler(this.PirámideToolStripMenuItemClick);
 			// 
 			// conversionesToolStripMenuItem
 			// 
