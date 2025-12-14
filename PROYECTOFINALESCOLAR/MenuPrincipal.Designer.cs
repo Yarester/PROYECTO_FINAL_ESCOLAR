@@ -126,18 +126,21 @@ namespace PROYECTOFINALESCOLAR
 			this.cuadradoToolStripMenuItem.Name = "cuadradoToolStripMenuItem";
 			this.cuadradoToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
 			this.cuadradoToolStripMenuItem.Text = "Cuadrado";
+			this.cuadradoToolStripMenuItem.Click += new System.EventHandler(this.CuadradoToolStripMenuItemClick);
 			// 
 			// rectánguloToolStripMenuItem
 			// 
 			this.rectánguloToolStripMenuItem.Name = "rectánguloToolStripMenuItem";
 			this.rectánguloToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
 			this.rectánguloToolStripMenuItem.Text = "Rectángulo";
+			this.rectánguloToolStripMenuItem.Click += new System.EventHandler(this.RectánguloToolStripMenuItemClick);
 			// 
 			// triánguloToolStripMenuItem
 			// 
 			this.triánguloToolStripMenuItem.Name = "triánguloToolStripMenuItem";
 			this.triánguloToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
 			this.triánguloToolStripMenuItem.Text = "Triángulo";
+			this.triánguloToolStripMenuItem.Click += new System.EventHandler(this.TriánguloToolStripMenuItemClick);
 			// 
 			// períToolStripMenuItem
 			// 
