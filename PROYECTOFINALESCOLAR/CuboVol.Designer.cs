@@ -145,6 +145,7 @@ namespace PROYECTOFINALESCOLAR
 			this.btnLimpiar.TabIndex = 4;
 			this.btnLimpiar.Text = "Limpiar";
 			this.btnLimpiar.UseVisualStyleBackColor = false;
+			this.btnLimpiar.Click += new System.EventHandler(this.BtnLimpiarClick);
 			// 
 			// btnCerrar
 			// 
@@ -157,6 +158,7 @@ namespace PROYECTOFINALESCOLAR
 			this.btnCerrar.TabIndex = 5;
 			this.btnCerrar.Text = "Cerrar";
 			this.btnCerrar.UseVisualStyleBackColor = false;
+			this.btnCerrar.Click += new System.EventHandler(this.BtnCerrarClick);
 			// 
 			// CuboVol
 			// 
