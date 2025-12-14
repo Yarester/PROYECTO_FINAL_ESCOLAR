@@ -42,35 +42,35 @@ namespace PROYECTOFINALESCOLAR
 			this.rdbSalado = new System.Windows.Forms.RadioButton();
 			this.rdbDulce = new System.Windows.Forms.RadioButton();
 			this.label1 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.cbProducto = new System.Windows.Forms.ComboBox();
+			this.btnAgregar = new System.Windows.Forms.Button();
+			this.btnEliminar = new System.Windows.Forms.Button();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txtPrecio = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.txtCantidad = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.listView1 = new System.Windows.Forms.ListView();
+			this.txtTotal = new System.Windows.Forms.TextBox();
+			this.lvTabla = new System.Windows.Forms.ListView();
 			this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
 			this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
 			this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
 			this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
 			this.label5 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.txtSubtotal = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
+			this.txtDescuento = new System.Windows.Forms.TextBox();
+			this.btnGuardar = new System.Windows.Forms.Button();
+			this.btnBorrar = new System.Windows.Forms.Button();
+			this.btnImprimir = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label7 = new System.Windows.Forms.Label();
-			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.txtNeto = new System.Windows.Forms.TextBox();
 			this.label8 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.textBox8 = new System.Windows.Forms.TextBox();
+			this.txtPagado = new System.Windows.Forms.TextBox();
+			this.txtCambio = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
@@ -131,40 +131,42 @@ namespace PROYECTOFINALESCOLAR
 			this.label1.TabIndex = 2;
 			this.label1.Text = "SELECCIONAR PRODUCTO";
 			// 
-			// comboBox1
+			// cbProducto
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.cbProducto.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cbProducto.FormattingEnabled = true;
+			this.cbProducto.Items.AddRange(new object[] {
 									"",
 									"PRODUCTO1",
 									"PRODUCTO2",
 									"PRODUCTO3",
 									"PRODUCTO4"});
-			this.comboBox1.Location = new System.Drawing.Point(318, 219);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(213, 29);
-			this.comboBox1.TabIndex = 3;
+			this.cbProducto.Location = new System.Drawing.Point(318, 219);
+			this.cbProducto.Name = "cbProducto";
+			this.cbProducto.Size = new System.Drawing.Size(213, 29);
+			this.cbProducto.TabIndex = 3;
+			this.cbProducto.SelectedIndexChanged += new System.EventHandler(this.CbProductoSelectedIndexChanged);
 			// 
-			// button1
+			// btnAgregar
 			// 
-			this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(687, 194);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(239, 45);
-			this.button1.TabIndex = 4;
-			this.button1.Text = "AGREGAR PRODUCTO";
-			this.button1.UseVisualStyleBackColor = true;
+			this.btnAgregar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAgregar.Location = new System.Drawing.Point(687, 194);
+			this.btnAgregar.Name = "btnAgregar";
+			this.btnAgregar.Size = new System.Drawing.Size(239, 45);
+			this.btnAgregar.TabIndex = 4;
+			this.btnAgregar.Text = "AGREGAR PRODUCTO";
+			this.btnAgregar.UseVisualStyleBackColor = true;
+			this.btnAgregar.Click += new System.EventHandler(this.BtnAgregarClick);
 			// 
-			// button2
+			// btnEliminar
 			// 
-			this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(687, 281);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(239, 45);
-			this.button2.TabIndex = 5;
-			this.button2.Text = "ELEMINAR PRODUCTO";
-			this.button2.UseVisualStyleBackColor = true;
+			this.btnEliminar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEliminar.Location = new System.Drawing.Point(687, 281);
+			this.btnEliminar.Name = "btnEliminar";
+			this.btnEliminar.Size = new System.Drawing.Size(239, 45);
+			this.btnEliminar.TabIndex = 5;
+			this.btnEliminar.Text = "ELEMINAR PRODUCTO";
+			this.btnEliminar.UseVisualStyleBackColor = true;
 			// 
 			// label2
 			// 
@@ -176,12 +178,12 @@ namespace PROYECTOFINALESCOLAR
 			this.label2.TabIndex = 6;
 			this.label2.Text = "PRECIO";
 			// 
-			// textBox1
+			// txtPrecio
 			// 
-			this.textBox1.Location = new System.Drawing.Point(26, 304);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 22);
-			this.textBox1.TabIndex = 7;
+			this.txtPrecio.Location = new System.Drawing.Point(26, 304);
+			this.txtPrecio.Name = "txtPrecio";
+			this.txtPrecio.Size = new System.Drawing.Size(100, 22);
+			this.txtPrecio.TabIndex = 7;
 			// 
 			// label3
 			// 
@@ -189,16 +191,16 @@ namespace PROYECTOFINALESCOLAR
 			this.label3.ForeColor = System.Drawing.Color.DarkSlateBlue;
 			this.label3.Location = new System.Drawing.Point(175, 271);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(109, 32);
+			this.label3.Size = new System.Drawing.Size(121, 32);
 			this.label3.TabIndex = 8;
 			this.label3.Text = "CANTIDAD";
 			// 
-			// textBox2
+			// txtCantidad
 			// 
-			this.textBox2.Location = new System.Drawing.Point(175, 304);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 22);
-			this.textBox2.TabIndex = 9;
+			this.txtCantidad.Location = new System.Drawing.Point(175, 304);
+			this.txtCantidad.Name = "txtCantidad";
+			this.txtCantidad.Size = new System.Drawing.Size(100, 22);
+			this.txtCantidad.TabIndex = 9;
 			// 
 			// label4
 			// 
@@ -210,26 +212,26 @@ namespace PROYECTOFINALESCOLAR
 			this.label4.TabIndex = 10;
 			this.label4.Text = "TOTAL";
 			// 
-			// textBox3
+			// txtTotal
 			// 
-			this.textBox3.Location = new System.Drawing.Point(318, 304);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(100, 22);
-			this.textBox3.TabIndex = 11;
+			this.txtTotal.Location = new System.Drawing.Point(318, 304);
+			this.txtTotal.Name = "txtTotal";
+			this.txtTotal.Size = new System.Drawing.Size(100, 22);
+			this.txtTotal.TabIndex = 11;
 			// 
-			// listView1
+			// lvTabla
 			// 
-			this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+			this.lvTabla.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
 									this.columnHeader1,
 									this.columnHeader2,
 									this.columnHeader3,
 									this.columnHeader4});
-			this.listView1.Location = new System.Drawing.Point(31, 397);
-			this.listView1.Name = "listView1";
-			this.listView1.Size = new System.Drawing.Size(895, 154);
-			this.listView1.TabIndex = 12;
-			this.listView1.UseCompatibleStateImageBehavior = false;
-			this.listView1.View = System.Windows.Forms.View.Details;
+			this.lvTabla.Location = new System.Drawing.Point(31, 397);
+			this.lvTabla.Name = "lvTabla";
+			this.lvTabla.Size = new System.Drawing.Size(895, 154);
+			this.lvTabla.TabIndex = 12;
+			this.lvTabla.UseCompatibleStateImageBehavior = false;
+			this.lvTabla.View = System.Windows.Forms.View.Details;
 			// 
 			// columnHeader1
 			// 
@@ -264,12 +266,12 @@ namespace PROYECTOFINALESCOLAR
 			this.label5.TabIndex = 13;
 			this.label5.Text = "SUBTOTAL";
 			// 
-			// textBox4
+			// txtSubtotal
 			// 
-			this.textBox4.Location = new System.Drawing.Point(158, 601);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(100, 22);
-			this.textBox4.TabIndex = 14;
+			this.txtSubtotal.Location = new System.Drawing.Point(158, 601);
+			this.txtSubtotal.Name = "txtSubtotal";
+			this.txtSubtotal.Size = new System.Drawing.Size(100, 22);
+			this.txtSubtotal.TabIndex = 14;
 			// 
 			// label6
 			// 
@@ -277,46 +279,46 @@ namespace PROYECTOFINALESCOLAR
 			this.label6.ForeColor = System.Drawing.Color.DarkSlateBlue;
 			this.label6.Location = new System.Drawing.Point(284, 595);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(123, 32);
+			this.label6.Size = new System.Drawing.Size(141, 32);
 			this.label6.TabIndex = 15;
 			this.label6.Text = "DESCUENTO";
 			// 
-			// textBox5
+			// txtDescuento
 			// 
-			this.textBox5.Location = new System.Drawing.Point(413, 601);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(100, 22);
-			this.textBox5.TabIndex = 16;
+			this.txtDescuento.Location = new System.Drawing.Point(417, 601);
+			this.txtDescuento.Name = "txtDescuento";
+			this.txtDescuento.Size = new System.Drawing.Size(136, 22);
+			this.txtDescuento.TabIndex = 16;
 			// 
-			// button3
+			// btnGuardar
 			// 
-			this.button3.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.Location = new System.Drawing.Point(96, 662);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(126, 45);
-			this.button3.TabIndex = 17;
-			this.button3.Text = "GUARDAR";
-			this.button3.UseVisualStyleBackColor = true;
+			this.btnGuardar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnGuardar.Location = new System.Drawing.Point(96, 662);
+			this.btnGuardar.Name = "btnGuardar";
+			this.btnGuardar.Size = new System.Drawing.Size(126, 45);
+			this.btnGuardar.TabIndex = 17;
+			this.btnGuardar.Text = "GUARDAR";
+			this.btnGuardar.UseVisualStyleBackColor = true;
 			// 
-			// button4
+			// btnBorrar
 			// 
-			this.button4.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button4.Location = new System.Drawing.Point(292, 662);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(126, 45);
-			this.button4.TabIndex = 18;
-			this.button4.Text = "BORRAR";
-			this.button4.UseVisualStyleBackColor = true;
+			this.btnBorrar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBorrar.Location = new System.Drawing.Point(292, 662);
+			this.btnBorrar.Name = "btnBorrar";
+			this.btnBorrar.Size = new System.Drawing.Size(126, 45);
+			this.btnBorrar.TabIndex = 18;
+			this.btnBorrar.Text = "BORRAR";
+			this.btnBorrar.UseVisualStyleBackColor = true;
 			// 
-			// button5
+			// btnImprimir
 			// 
-			this.button5.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button5.Location = new System.Drawing.Point(473, 662);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(126, 45);
-			this.button5.TabIndex = 19;
-			this.button5.Text = "IMPRIMIR";
-			this.button5.UseVisualStyleBackColor = true;
+			this.btnImprimir.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnImprimir.Location = new System.Drawing.Point(473, 662);
+			this.btnImprimir.Name = "btnImprimir";
+			this.btnImprimir.Size = new System.Drawing.Size(126, 45);
+			this.btnImprimir.TabIndex = 19;
+			this.btnImprimir.Text = "IMPRIMIR";
+			this.btnImprimir.UseVisualStyleBackColor = true;
 			// 
 			// panel2
 			// 
@@ -344,13 +346,13 @@ namespace PROYECTOFINALESCOLAR
 			this.label7.TabIndex = 20;
 			this.label7.Text = "IMPORTE NETO";
 			// 
-			// textBox6
+			// txtNeto
 			// 
-			this.textBox6.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox6.Location = new System.Drawing.Point(747, 581);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(163, 28);
-			this.textBox6.TabIndex = 21;
+			this.txtNeto.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtNeto.Location = new System.Drawing.Point(747, 581);
+			this.txtNeto.Name = "txtNeto";
+			this.txtNeto.Size = new System.Drawing.Size(163, 28);
+			this.txtNeto.TabIndex = 21;
 			// 
 			// label8
 			// 
@@ -372,21 +374,21 @@ namespace PROYECTOFINALESCOLAR
 			this.label9.TabIndex = 23;
 			this.label9.Text = "CAMBIO";
 			// 
-			// textBox7
+			// txtPagado
 			// 
-			this.textBox7.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox7.Location = new System.Drawing.Point(763, 622);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(163, 28);
-			this.textBox7.TabIndex = 24;
+			this.txtPagado.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPagado.Location = new System.Drawing.Point(763, 622);
+			this.txtPagado.Name = "txtPagado";
+			this.txtPagado.Size = new System.Drawing.Size(163, 28);
+			this.txtPagado.TabIndex = 24;
 			// 
-			// textBox8
+			// txtCambio
 			// 
-			this.textBox8.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox8.Location = new System.Drawing.Point(704, 662);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(163, 28);
-			this.textBox8.TabIndex = 25;
+			this.txtCambio.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtCambio.Location = new System.Drawing.Point(704, 662);
+			this.txtCambio.Name = "txtCambio";
+			this.txtCambio.Size = new System.Drawing.Size(163, 28);
+			this.txtCambio.TabIndex = 25;
 			// 
 			// frmPasteleria
 			// 
@@ -394,31 +396,31 @@ namespace PROYECTOFINALESCOLAR
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Thistle;
 			this.ClientSize = new System.Drawing.Size(964, 736);
-			this.Controls.Add(this.textBox8);
-			this.Controls.Add(this.textBox7);
+			this.Controls.Add(this.txtCambio);
+			this.Controls.Add(this.txtPagado);
 			this.Controls.Add(this.label9);
 			this.Controls.Add(this.label8);
-			this.Controls.Add(this.textBox6);
+			this.Controls.Add(this.txtNeto);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.button5);
-			this.Controls.Add(this.button4);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.textBox5);
+			this.Controls.Add(this.btnImprimir);
+			this.Controls.Add(this.btnBorrar);
+			this.Controls.Add(this.btnGuardar);
+			this.Controls.Add(this.txtDescuento);
 			this.Controls.Add(this.label6);
-			this.Controls.Add(this.textBox4);
+			this.Controls.Add(this.txtSubtotal);
 			this.Controls.Add(this.label5);
-			this.Controls.Add(this.listView1);
-			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.lvTabla);
+			this.Controls.Add(this.txtTotal);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.txtCantidad);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txtPrecio);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.btnEliminar);
+			this.Controls.Add(this.btnAgregar);
+			this.Controls.Add(this.cbProducto);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.pictureBox1);
@@ -429,35 +431,35 @@ namespace PROYECTOFINALESCOLAR
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.TextBox textBox7;
+		private System.Windows.Forms.TextBox txtCambio;
+		private System.Windows.Forms.TextBox txtPagado;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.TextBox textBox6;
+		private System.Windows.Forms.TextBox txtNeto;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Button button5;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.Button btnImprimir;
+		private System.Windows.Forms.Button btnBorrar;
+		private System.Windows.Forms.Button btnGuardar;
+		private System.Windows.Forms.TextBox txtDescuento;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox txtSubtotal;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.ColumnHeader columnHeader4;
 		private System.Windows.Forms.ColumnHeader columnHeader3;
 		private System.Windows.Forms.ColumnHeader columnHeader2;
 		private System.Windows.Forms.ColumnHeader columnHeader1;
-		private System.Windows.Forms.ListView listView1;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.ListView lvTabla;
+		private System.Windows.Forms.TextBox txtTotal;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox txtCantidad;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtPrecio;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.Button btnEliminar;
+		private System.Windows.Forms.Button btnAgregar;
+		private System.Windows.Forms.ComboBox cbProducto;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.RadioButton rdbDulce;
 		private System.Windows.Forms.RadioButton rdbSalado;
