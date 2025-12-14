@@ -83,6 +83,25 @@ namespace PROYECTOFINALESCOLAR
 			KiloMillas kms = new KiloMillas();
 			kms.MdiParent = this;
 			kms.Show();
+		void CuadradoToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			CuadradoA Cuadrado = new CuadradoA();
+			Cuadrado.MdiParent = this;
+			Cuadrado.Show();
+		}
+		
+		void RectánguloToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			RectanguloA Rect = new RectanguloA();
+			Rect.MdiParent = this;
+			Rect.Show();
+		}
+		
+		void TriánguloToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			TrianguloA Tria = new TrianguloA();
+			Tria.MdiParent = this;
+			Tria.Show();
 		}
 	}
 }

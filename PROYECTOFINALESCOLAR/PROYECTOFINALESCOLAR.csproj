@@ -51,6 +51,10 @@
     <Compile Include="BoletaCalificacion.Designer.cs">
       <DependentUpon>BoletaCalificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="CuadradoA.cs" />
+    <Compile Include="CuadradoA.Designer.cs">
+      <DependentUpon>CuadradoA.cs</DependentUpon>
+    </Compile>
     <Compile Include="CuboVol.cs" />
     <Compile Include="CuboVol.Designer.cs">
       <DependentUpon>CuboVol.cs</DependentUpon>
@@ -97,10 +101,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <CodeAnalysisDictionary Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RectanguloA.cs" />
+    <Compile Include="RectanguloA.Designer.cs">
+      <DependentUpon>RectanguloA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrianguloA.cs" />
+    <Compile Include="TrianguloA.Designer.cs">
+      <DependentUpon>TrianguloA.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BoletaCalificacion.resx">
       <DependentUpon>BoletaCalificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuadradoA.resx">
+      <DependentUpon>CuadradoA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CuboVol.resx">
       <DependentUpon>CuboVol.cs</DependentUpon>
@@ -128,6 +143,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PiramideVol.resx">
       <DependentUpon>PiramideVol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RectanguloA.resx">
+      <DependentUpon>RectanguloA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrianguloA.resx">
+      <DependentUpon>TrianguloA.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
