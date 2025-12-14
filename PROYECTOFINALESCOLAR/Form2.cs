@@ -30,6 +30,7 @@ namespace PROYECTOFINALESCOLAR
 			
 			//PASTELERIA
 		}
+		double Precio=0;
 		
 		void RdbDulceCheckedChanged(object sender, EventArgs e)
 		{
@@ -53,6 +54,22 @@ namespace PROYECTOFINALESCOLAR
 			{
 			 rdbSalado.ForeColor=Color.White;
 			}
+		}
+		
+		void BtnAgregarClick(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void CbProductoSelectedIndexChanged(object sender, EventArgs e)
+		{
+			string producto = cbProducto.Text;
+				if (producto.Equals("PRODUCTO1"))Precio=78;
+				if (producto.Equals("PRODUCTO2"))Precio=126;
+				if (producto.Equals("PRODUCTO3"))Precio=180;
+				if (producto.Equals("PRODUCTO4"))Precio=220;
+				
+				txtPrecio.Text=Precio.ToString("C");
 		}
 	}
 }

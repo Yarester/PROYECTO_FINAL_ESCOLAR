@@ -84,7 +84,7 @@ namespace PROYECTOFINALESCOLAR
 									this.acercaDeToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(939, 28);
+			this.menuStrip1.Size = new System.Drawing.Size(1054, 28);
 			this.menuStrip1.TabIndex = 1;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -173,21 +173,21 @@ namespace PROYECTOFINALESCOLAR
 			// esferaToolStripMenuItem
 			// 
 			this.esferaToolStripMenuItem.Name = "esferaToolStripMenuItem";
-			this.esferaToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+			this.esferaToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
 			this.esferaToolStripMenuItem.Text = "Esfera";
 			this.esferaToolStripMenuItem.Click += new System.EventHandler(this.EsferaToolStripMenuItemClick);
 			// 
 			// cuboToolStripMenuItem
 			// 
 			this.cuboToolStripMenuItem.Name = "cuboToolStripMenuItem";
-			this.cuboToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+			this.cuboToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
 			this.cuboToolStripMenuItem.Text = "Cubo";
 			this.cuboToolStripMenuItem.Click += new System.EventHandler(this.CuboToolStripMenuItemClick);
 			// 
 			// pirámideToolStripMenuItem
 			// 
 			this.pirámideToolStripMenuItem.Name = "pirámideToolStripMenuItem";
-			this.pirámideToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+			this.pirámideToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
 			this.pirámideToolStripMenuItem.Text = "Pirámide";
 			this.pirámideToolStripMenuItem.Click += new System.EventHandler(this.PirámideToolStripMenuItemClick);
 			// 
@@ -263,6 +263,7 @@ namespace PROYECTOFINALESCOLAR
 			this.boletaDeCalificacionesToolStripMenuItem.Name = "boletaDeCalificacionesToolStripMenuItem";
 			this.boletaDeCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
 			this.boletaDeCalificacionesToolStripMenuItem.Text = "Boleta de calificaciones";
+			this.boletaDeCalificacionesToolStripMenuItem.Click += new System.EventHandler(this.BoletaDeCalificacionesToolStripMenuItemClick);
 			// 
 			// pasteleríaToolStripMenuItem
 			// 
@@ -301,7 +302,7 @@ namespace PROYECTOFINALESCOLAR
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.ClientSize = new System.Drawing.Size(939, 471);
+			this.ClientSize = new System.Drawing.Size(1054, 705);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MenuPrincipal";

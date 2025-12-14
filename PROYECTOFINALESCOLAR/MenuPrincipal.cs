@@ -70,5 +70,12 @@ namespace PROYECTOFINALESCOLAR
 			Cubo.MdiParent = this;
 			Cubo.Show();
 		}
+		
+		void BoletaDeCalificacionesToolStripMenuItemClick(object sender, EventArgs e)
+		{
+		    BoletaCalificacion Cali = new BoletaCalificacion();
+			Cali.MdiParent = this;
+			Cali.Show();
+		}
 	}
 }
