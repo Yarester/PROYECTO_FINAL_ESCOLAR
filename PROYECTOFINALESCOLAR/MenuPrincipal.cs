@@ -83,6 +83,7 @@ namespace PROYECTOFINALESCOLAR
 			KiloMillas kms = new KiloMillas();
 			kms.MdiParent = this;
 			kms.Show();
+		}
 		void CuadradoToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			CuadradoA Cuadrado = new CuadradoA();
@@ -102,6 +103,20 @@ namespace PROYECTOFINALESCOLAR
 			TrianguloA Tria = new TrianguloA();
 			Tria.MdiParent = this;
 			Tria.Show();
+		}
+		
+		void KilogramosAMillasToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			kiloLibra kl = new kiloLibra();
+			kl.MdiParent = this;
+			kl.Show();
+		}
+		
+		void CelsiusAFarenheitToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Temperatura temp = new Temperatura();
+			temp.MdiParent = this;
+			temp.Show();
 		}
 	}
 }

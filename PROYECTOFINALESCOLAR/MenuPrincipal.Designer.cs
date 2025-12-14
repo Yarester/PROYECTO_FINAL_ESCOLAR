@@ -232,7 +232,8 @@ namespace PROYECTOFINALESCOLAR
 			// 
 			this.kilogramosAMillasToolStripMenuItem.Name = "kilogramosAMillasToolStripMenuItem";
 			this.kilogramosAMillasToolStripMenuItem.Size = new System.Drawing.Size(209, 24);
-			this.kilogramosAMillasToolStripMenuItem.Text = "Kilogramos a Millas";
+			this.kilogramosAMillasToolStripMenuItem.Text = "Kilogramos a Libras";
+			this.kilogramosAMillasToolStripMenuItem.Click += new System.EventHandler(this.KilogramosAMillasToolStripMenuItemClick);
 			// 
 			// temperaturaToolStripMenuItem
 			// 
@@ -247,6 +248,7 @@ namespace PROYECTOFINALESCOLAR
 			this.celsiusAFarenheitToolStripMenuItem.Name = "celsiusAFarenheitToolStripMenuItem";
 			this.celsiusAFarenheitToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
 			this.celsiusAFarenheitToolStripMenuItem.Text = "Celsius a Farenheit";
+			this.celsiusAFarenheitToolStripMenuItem.Click += new System.EventHandler(this.CelsiusAFarenheitToolStripMenuItemClick);
 			// 
 			// tiempoToolStripMenuItem
 			// 

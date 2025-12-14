@@ -71,6 +71,10 @@
     <Compile Include="Fibonacci.Designer.cs">
       <DependentUpon>Fibonacci.cs</DependentUpon>
     </Compile>
+    <Compile Include="kiloLibra.cs" />
+    <Compile Include="kiloLibra.Designer.cs">
+      <DependentUpon>kiloLibra.cs</DependentUpon>
+    </Compile>
     <Compile Include="KiloMillas.cs" />
     <Compile Include="KiloMillas.Designer.cs">
       <DependentUpon>KiloMillas.cs</DependentUpon>
@@ -105,6 +109,10 @@
     <Compile Include="RectanguloA.Designer.cs">
       <DependentUpon>RectanguloA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Temperatura.cs" />
+    <Compile Include="Temperatura.Designer.cs">
+      <DependentUpon>Temperatura.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrianguloA.cs" />
     <Compile Include="TrianguloA.Designer.cs">
       <DependentUpon>TrianguloA.cs</DependentUpon>
@@ -132,6 +140,9 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="kiloLibra.resx">
+      <DependentUpon>kiloLibra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KiloMillas.resx">
       <DependentUpon>KiloMillas.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RectanguloA.resx">
       <DependentUpon>RectanguloA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temperatura.resx">
+      <DependentUpon>Temperatura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrianguloA.resx">
       <DependentUpon>TrianguloA.cs</DependentUpon>
