@@ -78,6 +78,11 @@ namespace PROYECTOFINALESCOLAR
 			Cali.Show();
 		}
 		
+		void KilometrosAMillasToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			KiloMillas kms = new KiloMillas();
+			kms.MdiParent = this;
+			kms.Show();
 		void CuadradoToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			CuadradoA Cuadrado = new CuadradoA();

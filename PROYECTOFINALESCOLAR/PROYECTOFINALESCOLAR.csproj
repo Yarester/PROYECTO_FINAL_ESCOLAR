@@ -71,6 +71,10 @@
     <Compile Include="Fibonacci.Designer.cs">
       <DependentUpon>Fibonacci.cs</DependentUpon>
     </Compile>
+    <Compile Include="KiloMillas.cs" />
+    <Compile Include="KiloMillas.Designer.cs">
+      <DependentUpon>KiloMillas.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs" />
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
@@ -127,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiloMillas.resx">
+      <DependentUpon>KiloMillas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
