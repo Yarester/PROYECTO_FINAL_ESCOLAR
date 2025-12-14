@@ -77,5 +77,12 @@ namespace PROYECTOFINALESCOLAR
 			Cali.MdiParent = this;
 			Cali.Show();
 		}
+		
+		void KilometrosAMillasToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			KiloMillas kms = new KiloMillas();
+			kms.MdiParent = this;
+			kms.Show();
+		}
 	}
 }

@@ -215,6 +215,7 @@ namespace PROYECTOFINALESCOLAR
 			this.kilometrosAMillasToolStripMenuItem.Name = "kilometrosAMillasToolStripMenuItem";
 			this.kilometrosAMillasToolStripMenuItem.Size = new System.Drawing.Size(205, 24);
 			this.kilometrosAMillasToolStripMenuItem.Text = "Kilometros a Millas";
+			this.kilometrosAMillasToolStripMenuItem.Click += new System.EventHandler(this.KilometrosAMillasToolStripMenuItemClick);
 			// 
 			// masaToolStripMenuItem
 			// 
