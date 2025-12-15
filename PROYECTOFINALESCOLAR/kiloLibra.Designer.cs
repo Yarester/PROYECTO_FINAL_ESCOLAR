@@ -56,6 +56,7 @@ namespace PROYECTOFINALESCOLAR
 			// 
 			this.txtLibras.Location = new System.Drawing.Point(332, 265);
 			this.txtLibras.Name = "txtLibras";
+			this.txtLibras.ReadOnly = true;
 			this.txtLibras.Size = new System.Drawing.Size(100, 22);
 			this.txtLibras.TabIndex = 10;
 			// 

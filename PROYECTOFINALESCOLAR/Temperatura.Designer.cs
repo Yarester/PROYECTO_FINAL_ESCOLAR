@@ -36,6 +36,7 @@ namespace PROYECTOFINALESCOLAR
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Temperatura));
 			this.button1 = new System.Windows.Forms.Button();
 			this.txtF = new System.Windows.Forms.TextBox();
 			this.txtC = new System.Windows.Forms.TextBox();
@@ -45,8 +46,10 @@ namespace PROYECTOFINALESCOLAR
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.btnConvertir = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel2.SuspendLayout();
 			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -58,11 +61,13 @@ namespace PROYECTOFINALESCOLAR
 			this.button1.TabIndex = 1;
 			this.button1.Text = "Salir";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// txtF
 			// 
 			this.txtF.Location = new System.Drawing.Point(329, 265);
 			this.txtF.Name = "txtF";
+			this.txtF.ReadOnly = true;
 			this.txtF.Size = new System.Drawing.Size(100, 22);
 			this.txtF.TabIndex = 10;
 			// 
@@ -103,6 +108,7 @@ namespace PROYECTOFINALESCOLAR
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.Plum;
+			this.panel2.Controls.Add(this.pictureBox1);
 			this.panel2.Controls.Add(this.btnConvertir);
 			this.panel2.Location = new System.Drawing.Point(1, 39);
 			this.panel2.Name = "panel2";
@@ -130,6 +136,16 @@ namespace PROYECTOFINALESCOLAR
 			this.panel1.Size = new System.Drawing.Size(585, 39);
 			this.panel1.TabIndex = 5;
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(247, 265);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 1;
+			this.pictureBox1.TabStop = false;
+			// 
 			// Temperatura
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -147,9 +163,11 @@ namespace PROYECTOFINALESCOLAR
 			this.Text = "Temperatura";
 			this.panel2.ResumeLayout(false);
 			this.panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button btnConvertir;
 		private System.Windows.Forms.Panel panel2;

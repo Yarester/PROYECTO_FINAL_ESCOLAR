@@ -58,7 +58,34 @@ namespace PROYECTOFINALESCOLAR
 		
 		void BtnAgregarClick(object sender, EventArgs e)
 		{
+			if(cbProducto.SelectedIndex == -1)
+			MessageBox.Show("Debe Seleccionar un producto....! !");
+			else if(txtCantidad.Text == "")
+			MessageBox.Show("Debe Ingresar una cantidad....! !");
+			else
+			{
+
+			// ESTO ESTA PENDIENTE NO LO SUPE SOLUCIONAR :,(...
+			string producto = cbProducto.Text;
+			int cantidad = Convert.ToInt32(txtCantidad.Text);
 			
+			double subtotal = cantidad * Precio;
+			double descuento = 0;
+			if(txtDescuento.Text == "")
+			descuento = 1 * subtotal;
+			else
+			descuento = 0.05 * subtotal;
+			
+			double PrecioNeto = subtotal - descuento;
+			double Pagado;
+			Pagado = double.Parse(txtPagado.Text);
+			double Cambio = PrecioNeto - Pagado;
+			
+			txtNeto.Text =PrecioNeto.ToString();
+			txtPagado.Text =Pagado.ToString();
+			txtCambio.Text =Cambio.ToString();
+			
+			}
 		}
 		
 		void CbProductoSelectedIndexChanged(object sender, EventArgs e)
