@@ -51,6 +51,10 @@
     <Compile Include="BoletaCalificacion.Designer.cs">
       <DependentUpon>BoletaCalificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="CircunferenciaP.cs" />
+    <Compile Include="CircunferenciaP.Designer.cs">
+      <DependentUpon>CircunferenciaP.cs</DependentUpon>
+    </Compile>
     <Compile Include="CuadradoA.cs" />
     <Compile Include="CuadradoA.Designer.cs">
       <DependentUpon>CuadradoA.cs</DependentUpon>
@@ -113,6 +117,10 @@
     <Compile Include="Temperatura.Designer.cs">
       <DependentUpon>Temperatura.cs</DependentUpon>
     </Compile>
+    <Compile Include="TrapecioP.cs" />
+    <Compile Include="TrapecioP.Designer.cs">
+      <DependentUpon>TrapecioP.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrianguloA.cs" />
     <Compile Include="TrianguloA.Designer.cs">
       <DependentUpon>TrianguloA.cs</DependentUpon>
@@ -121,6 +129,9 @@
   <ItemGroup>
     <EmbeddedResource Include="BoletaCalificacion.resx">
       <DependentUpon>BoletaCalificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CircunferenciaP.resx">
+      <DependentUpon>CircunferenciaP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CuadradoA.resx">
       <DependentUpon>CuadradoA.cs</DependentUpon>
@@ -160,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Temperatura.resx">
       <DependentUpon>Temperatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrapecioP.resx">
+      <DependentUpon>TrapecioP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrianguloA.resx">
       <DependentUpon>TrianguloA.cs</DependentUpon>

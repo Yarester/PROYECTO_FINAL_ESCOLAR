@@ -156,12 +156,14 @@ namespace PROYECTOFINALESCOLAR
 			this.circunferenciaToolStripMenuItem.Name = "circunferenciaToolStripMenuItem";
 			this.circunferenciaToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
 			this.circunferenciaToolStripMenuItem.Text = "Circunferencia";
+			this.circunferenciaToolStripMenuItem.Click += new System.EventHandler(this.CircunferenciaToolStripMenuItemClick);
 			// 
 			// trapecioToolStripMenuItem
 			// 
 			this.trapecioToolStripMenuItem.Name = "trapecioToolStripMenuItem";
 			this.trapecioToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
 			this.trapecioToolStripMenuItem.Text = "Trapecio";
+			this.trapecioToolStripMenuItem.Click += new System.EventHandler(this.TrapecioToolStripMenuItemClick);
 			// 
 			// volumenToolStripMenuItem
 			// 

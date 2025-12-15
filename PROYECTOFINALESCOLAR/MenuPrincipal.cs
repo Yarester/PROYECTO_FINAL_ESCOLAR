@@ -118,5 +118,19 @@ namespace PROYECTOFINALESCOLAR
 			temp.MdiParent = this;
 			temp.Show();
 		}
+		
+		void CircunferenciaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			CircunferenciaP Circun = new CircunferenciaP();
+			Circun.MdiParent = this;
+			Circun.Show();
+		}
+		
+		void TrapecioToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			TrapecioP Trap = new TrapecioP();
+			Trap.MdiParent = this;
+			Trap.Show();
+		}
 	}
 }
