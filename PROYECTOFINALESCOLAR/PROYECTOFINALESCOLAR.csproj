@@ -47,6 +47,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="acercaD.cs" />
+    <Compile Include="acercaD.Designer.cs">
+      <DependentUpon>acercaD.cs</DependentUpon>
+    </Compile>
     <Compile Include="BoletaCalificacion.cs" />
     <Compile Include="BoletaCalificacion.Designer.cs">
       <DependentUpon>BoletaCalificacion.cs</DependentUpon>
@@ -58,6 +62,10 @@
     <Compile Include="CuboVol.cs" />
     <Compile Include="CuboVol.Designer.cs">
       <DependentUpon>CuboVol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.cs" />
+    <Compile Include="Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
     </Compile>
     <Compile Include="EsferaVol.cs" />
     <Compile Include="EsferaVol.Designer.cs">
@@ -119,6 +127,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="acercaD.resx">
+      <DependentUpon>acercaD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BoletaCalificacion.resx">
       <DependentUpon>BoletaCalificacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CuboVol.resx">
       <DependentUpon>CuboVol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EsferaVol.resx">
       <DependentUpon>EsferaVol.cs</DependentUpon>

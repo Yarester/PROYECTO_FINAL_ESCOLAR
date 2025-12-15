@@ -125,5 +125,10 @@ namespace PROYECTOFINALESCOLAR
 			Past.MdiParent = this;
 			Past.Show();
 		}
+		
+		void AcercaDeToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }
