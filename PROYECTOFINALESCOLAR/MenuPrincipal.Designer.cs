@@ -277,6 +277,7 @@ namespace PROYECTOFINALESCOLAR
 			this.pasteleríaToolStripMenuItem.Name = "pasteleríaToolStripMenuItem";
 			this.pasteleríaToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
 			this.pasteleríaToolStripMenuItem.Text = "Pastelería";
+			this.pasteleríaToolStripMenuItem.Click += new System.EventHandler(this.PasteleríaToolStripMenuItemClick);
 			// 
 			// empleadosToolStripMenuItem
 			// 

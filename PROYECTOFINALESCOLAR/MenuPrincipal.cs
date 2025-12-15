@@ -124,6 +124,13 @@ namespace PROYECTOFINALESCOLAR
 			Segundahora sh = new Segundahora();
 			sh.MdiParent = this;
 			sh.Show();
+     }
+      
+		void PasteleríaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			frmPasteleria Past = new frmPasteleria();
+			Past.MdiParent = this;
+			Past.Show();
 		}
 	}
 }

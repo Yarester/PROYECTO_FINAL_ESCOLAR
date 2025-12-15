@@ -51,7 +51,7 @@ namespace PROYECTOFINALESCOLAR
 			this.txtCantidad = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.txtTotal = new System.Windows.Forms.TextBox();
-			this.lvTabla = new System.Windows.Forms.ListView();
+			this.listView1 = new System.Windows.Forms.ListView();
 			this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
 			this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
 			this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
@@ -219,19 +219,19 @@ namespace PROYECTOFINALESCOLAR
 			this.txtTotal.Size = new System.Drawing.Size(100, 22);
 			this.txtTotal.TabIndex = 11;
 			// 
-			// lvTabla
+			// listView1
 			// 
-			this.lvTabla.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+			this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
 									this.columnHeader1,
 									this.columnHeader2,
 									this.columnHeader3,
 									this.columnHeader4});
-			this.lvTabla.Location = new System.Drawing.Point(31, 397);
-			this.lvTabla.Name = "lvTabla";
-			this.lvTabla.Size = new System.Drawing.Size(895, 154);
-			this.lvTabla.TabIndex = 12;
-			this.lvTabla.UseCompatibleStateImageBehavior = false;
-			this.lvTabla.View = System.Windows.Forms.View.Details;
+			this.listView1.Location = new System.Drawing.Point(31, 397);
+			this.listView1.Name = "listView1";
+			this.listView1.Size = new System.Drawing.Size(895, 154);
+			this.listView1.TabIndex = 12;
+			this.listView1.UseCompatibleStateImageBehavior = false;
+			this.listView1.View = System.Windows.Forms.View.Details;
 			// 
 			// columnHeader1
 			// 
@@ -309,6 +309,7 @@ namespace PROYECTOFINALESCOLAR
 			this.btnBorrar.TabIndex = 18;
 			this.btnBorrar.Text = "BORRAR";
 			this.btnBorrar.UseVisualStyleBackColor = true;
+			this.btnBorrar.Click += new System.EventHandler(this.BtnBorrarClick);
 			// 
 			// btnImprimir
 			// 
@@ -411,7 +412,7 @@ namespace PROYECTOFINALESCOLAR
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.txtSubtotal);
 			this.Controls.Add(this.label5);
-			this.Controls.Add(this.lvTabla);
+			this.Controls.Add(this.listView1);
 			this.Controls.Add(this.txtTotal);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.txtCantidad);
@@ -426,6 +427,7 @@ namespace PROYECTOFINALESCOLAR
 			this.Controls.Add(this.pictureBox1);
 			this.Name = "frmPasteleria";
 			this.Text = "PASTELERIA";
+			this.Load += new System.EventHandler(this.FrmPasteleriaLoad);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -450,7 +452,7 @@ namespace PROYECTOFINALESCOLAR
 		private System.Windows.Forms.ColumnHeader columnHeader3;
 		private System.Windows.Forms.ColumnHeader columnHeader2;
 		private System.Windows.Forms.ColumnHeader columnHeader1;
-		private System.Windows.Forms.ListView lvTabla;
+		private System.Windows.Forms.ListView listView1;
 		private System.Windows.Forms.TextBox txtTotal;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.TextBox txtCantidad;
