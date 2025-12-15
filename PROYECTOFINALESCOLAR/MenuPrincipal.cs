@@ -118,5 +118,12 @@ namespace PROYECTOFINALESCOLAR
 			temp.MdiParent = this;
 			temp.Show();
 		}
+		
+		void PasteleríaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			frmPasteleria Past = new frmPasteleria();
+			Past.MdiParent = this;
+			Past.Show();
+		}
 	}
 }
