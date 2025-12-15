@@ -304,6 +304,7 @@ namespace PROYECTOFINALESCOLAR
 			this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
 			this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
 			this.acercaDeToolStripMenuItem.Text = "Acerca de";
+			this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.AcercaDeToolStripMenuItemClick);
 			// 
 			// MenuPrincipal
 			// 
