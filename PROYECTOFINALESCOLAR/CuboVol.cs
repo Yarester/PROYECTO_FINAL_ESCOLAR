@@ -48,6 +48,9 @@ namespace PROYECTOFINALESCOLAR
 		
 		void BtnLimpiarClick(object sender, EventArgs e)
 		{
+			txtLado.Clear();
+			txtResultado.Clear();
+
 			txtResultado.Clear();
 			txtLado.Clear();
 		}
