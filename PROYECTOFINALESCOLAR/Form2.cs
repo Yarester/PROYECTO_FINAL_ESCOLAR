@@ -30,6 +30,7 @@ namespace PROYECTOFINALESCOLAR
 			
 			//PASTELERIA
 		}
+		double Precio=0;
 		
 		void RdbDulceCheckedChanged(object sender, EventArgs e)
 		{
@@ -53,6 +54,49 @@ namespace PROYECTOFINALESCOLAR
 			{
 			 rdbSalado.ForeColor=Color.White;
 			}
+		}
+		
+		void BtnAgregarClick(object sender, EventArgs e)
+		{
+			if(cbProducto.SelectedIndex == -1)
+			MessageBox.Show("Debe Seleccionar un producto....! !");
+			else if(txtCantidad.Text == "")
+			MessageBox.Show("Debe Ingresar una cantidad....! !");
+			else
+			{
+
+			// ESTO ESTA PENDIENTE NO LO SUPE SOLUCIONAR :,(...
+			string producto = cbProducto.Text;
+			int cantidad = Convert.ToInt32(txtCantidad.Text);
+			
+			double subtotal = cantidad * Precio;
+			double descuento = 0;
+			if(txtDescuento.Text == "")
+			descuento = 1 * subtotal;
+			else
+			descuento = 0.05 * subtotal;
+			
+			double PrecioNeto = subtotal - descuento;
+			double Pagado;
+			Pagado = double.Parse(txtPagado.Text);
+			double Cambio = PrecioNeto - Pagado;
+			
+			txtNeto.Text =PrecioNeto.ToString();
+			txtPagado.Text =Pagado.ToString();
+			txtCambio.Text =Cambio.ToString();
+			
+			}
+		}
+		
+		void CbProductoSelectedIndexChanged(object sender, EventArgs e)
+		{
+			string producto = cbProducto.Text;
+				if (producto.Equals("PRODUCTO1"))Precio=78;
+				if (producto.Equals("PRODUCTO2"))Precio=126;
+				if (producto.Equals("PRODUCTO3"))Precio=180;
+				if (producto.Equals("PRODUCTO4"))Precio=220;
+				
+				txtPrecio.Text=Precio.ToString("C");
 		}
 	}
 }

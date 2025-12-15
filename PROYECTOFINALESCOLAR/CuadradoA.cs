@@ -1,8 +1,8 @@
 ﻿/*
  * Creado por SharpDevelop.
  * Usuario: EDGAR
- * Fecha: 13/12/2025
- * Hora: 04:48 p. m.
+ * Fecha: 14/12/2025
+ * Hora: 12:27 p. m.
  * 
  * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
  */
@@ -13,11 +13,11 @@ using System.Windows.Forms;
 namespace PROYECTOFINALESCOLAR
 {
 	/// <summary>
-	/// Description of CuboVol.
+	/// Description of CuadradoA.
 	/// </summary>
-	public partial class CuboVol : Form
+	public partial class CuadradoA : Form
 	{
-		public CuboVol()
+		public CuadradoA()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -31,28 +31,21 @@ namespace PROYECTOFINALESCOLAR
 		
 		void BtnCalcularClick(object sender, EventArgs e)
 		{
-					double lado, volumen;
-		
-		    lado = Convert.ToDouble(txtLado.Text);
-		
-		    volumen = Math.Pow(lado, 3);
-		
-		    txtResultado.Text = volumen.ToString("0.00");
+			double lado = Convert.ToDouble(txtLado.Text);
+			double area = lado * lado;
+			txtArea.Text = area.ToString();
 
+		}
+		
+		void BtnLimpiarClick(object sender, EventArgs e)
+		{
+			txtArea.Clear();
+			txtLado.Clear();
 		}
 		
 		void BtnCerrarClick(object sender, EventArgs e)
 		{
 			Close();
-		}
-		
-		void BtnLimpiarClick(object sender, EventArgs e)
-		{
-			txtLado.Clear();
-			txtResultado.Clear();
-
-			txtResultado.Clear();
-			txtLado.Clear();
 		}
 	}
 }

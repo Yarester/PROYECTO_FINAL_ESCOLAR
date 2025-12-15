@@ -70,5 +70,53 @@ namespace PROYECTOFINALESCOLAR
 			Cubo.MdiParent = this;
 			Cubo.Show();
 		}
+		
+		void BoletaDeCalificacionesToolStripMenuItemClick(object sender, EventArgs e)
+		{
+		    BoletaCalificacion Cali = new BoletaCalificacion();
+			Cali.MdiParent = this;
+			Cali.Show();
+		}
+		
+		void KilometrosAMillasToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			KiloMillas kms = new KiloMillas();
+			kms.MdiParent = this;
+			kms.Show();
+		}
+		void CuadradoToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			CuadradoA Cuadrado = new CuadradoA();
+			Cuadrado.MdiParent = this;
+			Cuadrado.Show();
+		}
+		
+		void RectánguloToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			RectanguloA Rect = new RectanguloA();
+			Rect.MdiParent = this;
+			Rect.Show();
+		}
+		
+		void TriánguloToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			TrianguloA Tria = new TrianguloA();
+			Tria.MdiParent = this;
+			Tria.Show();
+		}
+		
+		void KilogramosAMillasToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			kiloLibra kl = new kiloLibra();
+			kl.MdiParent = this;
+			kl.Show();
+		}
+		
+		void CelsiusAFarenheitToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Temperatura temp = new Temperatura();
+			temp.MdiParent = this;
+			temp.Show();
+		}
 	}
 }
