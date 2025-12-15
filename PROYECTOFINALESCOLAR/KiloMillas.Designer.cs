@@ -41,12 +41,12 @@ namespace PROYECTOFINALESCOLAR
 			this.button1 = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnConvertir = new System.Windows.Forms.Button();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.txtKilometro = new System.Windows.Forms.TextBox();
 			this.txtMilla = new System.Windows.Forms.TextBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -92,6 +92,16 @@ namespace PROYECTOFINALESCOLAR
 			this.panel2.Size = new System.Drawing.Size(246, 342);
 			this.panel2.TabIndex = 1;
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(16, 32);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(218, 216);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 2;
+			this.pictureBox1.TabStop = false;
+			// 
 			// btnConvertir
 			// 
 			this.btnConvertir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -132,18 +142,9 @@ namespace PROYECTOFINALESCOLAR
 			// 
 			this.txtMilla.Location = new System.Drawing.Point(324, 260);
 			this.txtMilla.Name = "txtMilla";
+			this.txtMilla.ReadOnly = true;
 			this.txtMilla.Size = new System.Drawing.Size(100, 22);
 			this.txtMilla.TabIndex = 4;
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(16, 32);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(218, 216);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 2;
-			this.pictureBox1.TabStop = false;
 			// 
 			// KiloMillas
 			// 

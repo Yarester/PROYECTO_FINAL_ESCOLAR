@@ -38,5 +38,10 @@ namespace PROYECTOFINALESCOLAR
 			
 			txtF.Text = Fahren.ToString();
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }
