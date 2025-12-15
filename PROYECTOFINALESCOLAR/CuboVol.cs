@@ -40,5 +40,16 @@ namespace PROYECTOFINALESCOLAR
 		    txtResultado.Text = volumen.ToString("0.00");
 
 		}
+		
+		void BtnCerrarClick(object sender, EventArgs e)
+		{
+			Close();
+		}
+		
+		void BtnLimpiarClick(object sender, EventArgs e)
+		{
+			txtLado.Clear();
+			txtResultado.Clear();
+		}
 	}
 }
