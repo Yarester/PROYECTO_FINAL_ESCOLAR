@@ -118,5 +118,12 @@ namespace PROYECTOFINALESCOLAR
 			temp.MdiParent = this;
 			temp.Show();
 		}
+		
+		void SegundosAHorasToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Segundahora sh = new Segundahora();
+			sh.MdiParent = this;
+			sh.Show();
+		}
 	}
 }

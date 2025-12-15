@@ -263,6 +263,7 @@ namespace PROYECTOFINALESCOLAR
 			this.segundosAHorasToolStripMenuItem.Name = "segundosAHorasToolStripMenuItem";
 			this.segundosAHorasToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
 			this.segundosAHorasToolStripMenuItem.Text = "Segundos a Horas";
+			this.segundosAHorasToolStripMenuItem.Click += new System.EventHandler(this.SegundosAHorasToolStripMenuItemClick);
 			// 
 			// boletaDeCalificacionesToolStripMenuItem
 			// 
@@ -294,7 +295,7 @@ namespace PROYECTOFINALESCOLAR
 			// salirToolStripMenuItem1
 			// 
 			this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-			this.salirToolStripMenuItem1.Size = new System.Drawing.Size(107, 24);
+			this.salirToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
 			this.salirToolStripMenuItem1.Text = "Salir";
 			// 
 			// acercaDeToolStripMenuItem
