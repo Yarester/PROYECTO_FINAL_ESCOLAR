@@ -17,6 +17,9 @@ namespace PROYECTOFINALESCOLAR
 	/// </summary>
 	public partial class frmPasteleria : Form
 	{
+		
+		double Precio=0;
+		
 		public frmPasteleria()
 		{
 			//
@@ -30,7 +33,6 @@ namespace PROYECTOFINALESCOLAR
 			
 			//PASTELERIA
 		}
-		double Precio=0;
 		
 		void RdbDulceCheckedChanged(object sender, EventArgs e)
 		{
@@ -58,45 +60,102 @@ namespace PROYECTOFINALESCOLAR
 		
 		void BtnAgregarClick(object sender, EventArgs e)
 		{
-			if(cbProducto.SelectedIndex == -1)
-			MessageBox.Show("Debe Seleccionar un producto....! !");
-			else if(txtCantidad.Text == "")
-			MessageBox.Show("Debe Ingresar una cantidad....! !");
-			else
-			{
+			if (cbProducto.SelectedIndex == -1)
+		    {
+		        MessageBox.Show("Debe seleccionar un producto");
+		        return;
+		    }
+		
+		    if (txtCantidad.Text == "")
+		    {
+		        MessageBox.Show("Debe ingresar una cantidad");
+		        return;
+		    }
+		
+		    string producto = cbProducto.Text;
+		    int cantidad = Convert.ToInt32(txtCantidad.Text);
+		    double subtotal = cantidad * Precio;
+		
+		    ListViewItem item = new ListViewItem(producto);
+		    item.SubItems.Add(Precio.ToString("C"));
+		    item.SubItems.Add(cantidad.ToString());
+		    item.SubItems.Add(subtotal.ToString("C"));
+		
+		    listView1.Items.Add(item);
+		
+		    CalcularTotales();
+	
+		    cbProducto.SelectedIndex = -1;
+		    txtPrecio.Clear();
+		    txtCantidad.Clear();
 
-			// ESTO ESTA PENDIENTE NO LO SUPE SOLUCIONAR :,(...
-			string producto = cbProducto.Text;
-			int cantidad = Convert.ToInt32(txtCantidad.Text);
-			
-			double subtotal = cantidad * Precio;
-			double descuento = 0;
-			if(txtDescuento.Text == "")
-			descuento = 1 * subtotal;
-			else
-			descuento = 0.05 * subtotal;
-			
-			double PrecioNeto = subtotal - descuento;
-			double Pagado;
-			Pagado = double.Parse(txtPagado.Text);
-			double Cambio = PrecioNeto - Pagado;
-			
-			txtNeto.Text =PrecioNeto.ToString();
-			txtPagado.Text =Pagado.ToString();
-			txtCambio.Text =Cambio.ToString();
-			
-			}
 		}
+		
+		void CalcularTotales()
+		{
+		    double subtotalGeneral = 0;
+		
+		    foreach (ListViewItem item in listView1.Items)
+		    {
+		        subtotalGeneral += double.Parse(
+		            item.SubItems[3].Text.Replace("$", "")
+		        );
+		    }
+		
+		    txtSubtotal.Text = subtotalGeneral.ToString("C");
+		
+		    double descuento = 0;
+		    if (txtDescuento.Text != "")
+		        descuento = Convert.ToDouble(txtDescuento.Text);
+		
+		    double neto = subtotalGeneral - descuento;
+		    txtNeto.Text = neto.ToString("C");
+		
+		    if (txtPagado.Text != "")
+		    {
+		        double pagado = Convert.ToDouble(txtPagado.Text);
+		        double cambio = pagado - neto;
+		        txtCambio.Text = cambio.ToString("C");
+		    }
+		}
+
 		
 		void CbProductoSelectedIndexChanged(object sender, EventArgs e)
 		{
 			string producto = cbProducto.Text;
-				if (producto.Equals("PRODUCTO1"))Precio=78;
-				if (producto.Equals("PRODUCTO2"))Precio=126;
-				if (producto.Equals("PRODUCTO3"))Precio=180;
-				if (producto.Equals("PRODUCTO4"))Precio=220;
-				
-				txtPrecio.Text=Precio.ToString("C");
+		
+		    if (producto == "PRODUCTO1") Precio = 78;
+		    if (producto == "PRODUCTO2") Precio = 126;
+		    if (producto == "PRODUCTO3") Precio = 180;
+		    if (producto == "PRODUCTO4") Precio = 220;
+		
+		    txtPrecio.Text = Precio.ToString("C");
+
+		}
+		
+		void FrmPasteleriaLoad(object sender, EventArgs e)
+		{
+			listView1.View = View.Details;
+		    listView1.FullRowSelect = true;
+		    listView1.GridLines = true;
+		
+		    listView1.Columns.Add("Producto", 120);
+		    listView1.Columns.Add("Precio", 80);
+		    listView1.Columns.Add("Cantidad", 80);
+		    listView1.Columns.Add("Subtotal", 100);
+
+		}
+		
+		void BtnBorrarClick(object sender, EventArgs e)
+		{
+			listView1.Items.Clear();
+
+		    txtSubtotal.Clear();
+		    txtDescuento.Clear();
+		    txtNeto.Clear();
+		    txtPagado.Clear();
+		    txtCambio.Clear();
+
 		}
 	}
 }
