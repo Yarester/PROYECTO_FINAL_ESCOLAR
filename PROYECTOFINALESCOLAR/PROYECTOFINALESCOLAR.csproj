@@ -109,6 +109,10 @@
     <Compile Include="RectanguloA.Designer.cs">
       <DependentUpon>RectanguloA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Segundahora.cs" />
+    <Compile Include="Segundahora.Designer.cs">
+      <DependentUpon>Segundahora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Temperatura.cs" />
     <Compile Include="Temperatura.Designer.cs">
       <DependentUpon>Temperatura.cs</DependentUpon>
@@ -157,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RectanguloA.resx">
       <DependentUpon>RectanguloA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Segundahora.resx">
+      <DependentUpon>Segundahora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Temperatura.resx">
       <DependentUpon>Temperatura.cs</DependentUpon>
