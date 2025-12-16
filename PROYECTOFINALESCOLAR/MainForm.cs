@@ -20,7 +20,6 @@ namespace PROYECTOFINALESCOLAR
 	{
 		public MainForm()
 		{
-			Application.Run(new frmPasteleria());
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//

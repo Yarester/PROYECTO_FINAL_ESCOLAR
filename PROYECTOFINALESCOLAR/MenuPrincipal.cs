@@ -135,7 +135,26 @@ namespace PROYECTOFINALESCOLAR
 		
 		void AcercaDeToolStripMenuItemClick(object sender, EventArgs e)
 		{
+			acercaD Crc = new acercaD();
+			Crc.MdiParent = this;
+			Crc.Show();
+		}
+		
+		void EmpleadosToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Empleados yo = new Empleados();
+			yo.MdiParent = this;
+			yo.Show();	
+		}
+		
+		void SalirToolStripMenuItem1Click(object sender, EventArgs e)
+		{
+			DialogResult respuesta = MessageBox.Show("¿Estas seguro de que deseas salir del sistema?", "Confirmr salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 			
+			if (respuesta == DialogResult.Yes)
+			{
+				Application.Exit();
+			}
 		}
 	}
 }
