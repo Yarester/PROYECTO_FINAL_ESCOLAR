@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace PROYECTOFINALESCOLAR
 {
@@ -33,6 +34,28 @@ namespace PROYECTOFINALESCOLAR
 			
 			//PASTELERIA
 		}
+		
+		public bool AgregarProducto(int clave, string nombre, decimal precio)
+        {
+            /// CREAR LA CONEXIÓN, CONFIGURAR Y ABRIRLA
+            MySqlConnection cn = new MySqlConnection();
+            cn.ConnectionString = "server=localhost; database=sistema_tienda; user=root; pwd=root;";
+            cn.Open();
+            /// AGREGAR EL REGISTRO A LA BASE DE DATOS
+            string strSQL = "insert into productos (clave, nombre, precio)" +
+                "values (@Clave, @Nombre, @precio)";
+            MySqlCommand comando = new MySqlCommand(strSQL, cn);
+            comando.Parameters.AddWithValue("Clave", clave);
+            comando.Parameters.AddWithValue("Nombre", nombre);
+            comando.Parameters.AddWithValue("Precio", precio);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Producto agregado");
+            
+            comando.Dispose();
+            cn.Close();
+            cn.Dispose();
+            return true;
+        }
 		
 		void RdbDulceCheckedChanged(object sender, EventArgs e)
 		{
