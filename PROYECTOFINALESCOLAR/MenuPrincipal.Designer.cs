@@ -284,6 +284,7 @@ namespace PROYECTOFINALESCOLAR
 			this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
 			this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
 			this.empleadosToolStripMenuItem.Text = "Empleados";
+			this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.EmpleadosToolStripMenuItemClick);
 			// 
 			// salirToolStripMenuItem
 			// 
@@ -298,6 +299,7 @@ namespace PROYECTOFINALESCOLAR
 			this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
 			this.salirToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
 			this.salirToolStripMenuItem1.Text = "Salir";
+			this.salirToolStripMenuItem1.Click += new System.EventHandler(this.SalirToolStripMenuItem1Click);
 			// 
 			// acercaDeToolStripMenuItem
 			// 

@@ -33,5 +33,12 @@ namespace PROYECTOFINALESCOLAR
 		{
 			
 		}
+		
+		void BtnRegresarClick(object sender, EventArgs e)
+		{
+			MenuPrincipal menu = new MenuPrincipal();
+			menu.Show();
+			this.Hide();
+		}
 	}
 }
